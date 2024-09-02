@@ -41,6 +41,10 @@
     > 这里的x和y可以参见下面的bounding_box()，如果输入的x和y的值，比元素的x，y要大，会点不到<br>但是它是div的宽度，如果输入的x和真实的x比较接近的话，也有可能能够点到
   - no_wait_after=True
     > 如果点击事件后出现了阻断性的弹出，此时可以令其为True，避免click的动作一直没有结束而失败
+  - click()
+    > 1、自动等待，2、自动滚动元素可见，3、用page.mouse去点击，4、等待初始化完成
+- .dblclick()
+  > 双击
 
 - page.locator("xxx").bounding_box()
   > 求xxx元素的大小，x、y、width、height、\_\_len__, x和y是在页面的绝对位置
