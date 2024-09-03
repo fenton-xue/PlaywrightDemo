@@ -45,9 +45,21 @@
     > 1、自动等待，2、自动滚动元素可见，3、用page.mouse去点击，4、等待初始化完成
 - .dblclick()
   > 双击
-
+- page.goto()
+  - wait_until="networkidle"
+    > 默认500ms没有新的网络请求，才会结束goto这个动作
 - page.locator("xxx").bounding_box()
   > 求xxx元素的大小，x、y、width、height、\_\_len__, x和y是在页面的绝对位置
+- page.get_by_text()
+  - exact=True
+    > 精确匹配
+
+#### 断言 ####
+- expect()
+  - .to_be_visible()
+    > 元素可见
+  - .to_be_attached()
+    > 元素在DOM中存在
 
 #### 小技巧 ####
 - Alt + P
